@@ -1,0 +1,17 @@
+GET http://localhost:3000/api/users
+
+###
+
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+  "email": "asdf1234@gmail.com",
+  "password": "asdf1234"
+}
+
+###
+
+GET http://localhost:3000/api/users
+Cookie: access_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFzZGYxMjM0QGdtYWlsLmNvbSIsImlhdCI6MTYwMDM4NjI3OX0.gGM67gyrVUJT15icQpdoxwU8U-8sFkAVEs-YLvF4vE0; Max-Age=3; Path=/; Expires=Thu, 17 Sep 2020 23:44:42 GMT; HttpOnly
+
